@@ -17,13 +17,7 @@ figure,
 
 shiwenData;
 
-% hold on
-% 
-% plot(Data(1:50,1),Data(1:50,2))
-% plot(Data(51:137,1),Data(51:137,2))
-% plot(Data(153:239,1),Data(153:239,2))
-
-Xigma_YS0 = 200;
+Xigma_YS0 = 178;
 
 Xigma_sat = 300;
 
@@ -37,15 +31,15 @@ evp_1 = Data(1:38,1);
 
 evpe_1 = evp_1 ;
 
-Xigma_YS_1 = Xigma_YS0 + Xigma_sat*(1-exp(-Beta*evpe_1));        %voce Ä£ĞÍ
+Xigma_YS_1 = Xigma_YS0 + Xigma_sat*(1-exp(-Beta*evpe_1));   
 
 alpha_11 = C1/gama1*(1-exp(-gama1*evpe_1));
 
 alpha_12 = C2/gama2*(1-exp(-gama2*evpe_1));
 
-alpha_1 = alpha_11 + alpha_12;    % chabocheÄ£ĞÍ
+alpha_1 = alpha_11 + alpha_12;    
 
-Xigma_1 = alpha_1 + Xigma_YS_1;         % ×ÜÓ¦Á¦
+Xigma_1 = alpha_1 + Xigma_YS_1;        
 
 evp_2 = Data(51:137,1);
 
@@ -81,12 +75,12 @@ hold on
 plot (evp_1,Xigma_1,'r--');
 plot (evp_2,Xigma_2,'r--');
 plot (evp_3,Xigma_3,'r--');
-legend('ÊµÑéÇúÏß','ÄâºÏÇúÏß')
+legend('å®éªŒæ›²çº¿','æ‹Ÿåˆæ›²çº¿')
 x_val=get(gca,'XTick');
 x_str=num2str(x_val');
 set(gca,'XTicklabel',x_str);
-xlabel('ËÜĞÔÓ¦±ä');
-ylabel('Ó¦Á¦/MPa');
+xlabel('å¡‘æ€§åº”å˜');
+ylabel('åº”åŠ›/MPa');
 
 
 
