@@ -1,6 +1,6 @@
 # hanshu
 The optimization objective function was established based on the Chaboche-Voce mixed hardening model
 # Run the code
-将1.m与2.m导入matlab,运行`run`命令得到参数拟合曲线
+Import the. M file into MATLAB and run it,the parameter fitting curve is obtained
 # Results
 ![alt 属性文本](https://github.com/xiaoseizi/hanshu/blob/main/Fitting-curve.png)
