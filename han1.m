@@ -5,7 +5,7 @@ function [f,df] = han1(XDENS)
 
 shiwenData;
 
-Xigma_YS0 = 200;
+Xigma_YS0 = 178;
 
 Xigma_sat = 300;
 
@@ -19,15 +19,15 @@ evp_1 = Data(1:38,1);
 
 evpe_1 = evp_1 ;
 
-Xigma_YS_1 = Xigma_YS0 + Xigma_sat*(1-exp(-Beta*evpe_1));        %voce 模型
+Xigma_YS_1 = Xigma_YS0 + Xigma_sat*(1-exp(-Beta*evpe_1));        
 
 alpha_11 = C1/gama1*(1-exp(-gama1*evpe_1));
 
 alpha_12 = C2/gama2*(1-exp(-gama2*evpe_1));
 
-alpha_1 = alpha_11 + alpha_12;    % chaboche模型
+alpha_1 = alpha_11 + alpha_12;    
 
-Xigma_1 = alpha_1 + Xigma_YS_1;         % 总应力
+Xigma_1 = alpha_1 + Xigma_YS_1;        
 
 evp_2 = Data(51:137,1);
 
