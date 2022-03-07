@@ -7,7 +7,7 @@ N = 4;
 LB =  [10000,10000,100,1];
 UB =  [150000,150000,1000,1000];
 
-x0 =  [50000,10000,1000,100];
+x0 =  [60000,15000,500,150];
 
 OP=optimset( 'Algorithm','trust-region-reflective','GradObj','on','disp','iter','MaxFunEvals',200,'TolFun',1e-20,'PlotFcns',@optimplotfval);
 
