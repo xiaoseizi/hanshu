@@ -3,4 +3,4 @@ The optimization objective function was established based on the Chaboche-Voce m
 # Run the code
 将1.m与2.m导入matlab,运行`run`命令得到参数拟合曲线
 # Results
-![alt 属性文本](图片地址)
+![alt 属性文本](https://github.com/xiaoseizi/hanshu/blob/main/Fitting-curve.png)
